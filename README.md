@@ -82,6 +82,8 @@ On form submission, the form is cleared and the newly created deck can be played
 
 # Reference
 
+The logo is using the Montserrat font (the font is already imported in public/index.html).
+
 Redux persist: https://github.com/rt2zz/redux-persist#basic-usage
 
 [Styled-components vscode package](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
