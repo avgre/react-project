@@ -59,12 +59,12 @@ The results card appears once all the questions have been answered.
 It shows a message at the top based on the success rate (percentage of correct answers).
 These are the rules you can use for the message:
 
-- if successRate is 0 -> show "Does not get it at all 😞"
-- if successRate is inferior to 25 -> show "Potential to get it one day 🤔"
-- if successRate is inferior to 50 -> show "Kind of gets it 😐"
-- if successRate is inferior to 75 -> show "On the road to getting it 🙂"
-- if successRate is inferior to 100 -> show "Almost got it! 😄"
-- if successRate is 100 -> show "Got it! 😎"
+- if successRate is 0% -> show "Does not get it at all 😞"
+- if successRate is inferior to 25% -> show "Potential to get it one day 🤔"
+- if successRate is inferior to 50% -> show "Kind of gets it 😐"
+- if successRate is inferior to 75% -> show "On the road to getting it 🙂"
+- if successRate is inferior to 100% -> show "Almost got it! 😄"
+- if successRate is 100% -> show "Got it! 😎"
 
 In addition, the results card shows a list of all the questions with the correct answer and the user's answer in <span style="green">green</span> if the answer was correct, <span style="green">red</span> if the answer was incorrect.
 
