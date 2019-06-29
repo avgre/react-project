@@ -84,9 +84,18 @@ On form submission, the form is cleared and the newly created deck can be played
 
 The logo is using the Montserrat font (the font is already imported in public/index.html).
 
-Redux persist: https://github.com/rt2zz/redux-persist#basic-usage
+Installing redux persist: https://github.com/rt2zz/redux-persist#basic-usage
 
 [Styled-components vscode package](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
+
+Note about mapStateToProps:  
+When using `mapStateToProps`, you may need to not only read data from the state but also from the props. You can do so with the second parameter:
+
+```js
+const mapStateToProps = (state, props) => {
+  return { something: state.something, someProp: props.someProp };
+};
+```
 
 Note about redux and nested objects:  
 Remember to not modify the app state directly, make a copy first!  
