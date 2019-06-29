@@ -93,7 +93,8 @@ When using `mapStateToProps`, you may need to not only read data from the state 
 
 ```js
 const mapStateToProps = (state, props) => {
-  return { something: state.something, someProp: props.someProp };
+  const something = state.things.find((thing) => thing.id === props.id);
+  return { something };
 };
 ```
 
