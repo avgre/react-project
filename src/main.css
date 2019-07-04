@@ -6,3 +6,23 @@ body {
 .navbar {
   background-color: dodgerblue;
 }
+
+.deckbuttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-radius: 6px;
+  margin: 20px;
+  padding: 20px;
+  max-width: 350px;
+  text-align: center;
+}
+
+.playbutton {
+  display: block;
+}
+
+.title {
+}

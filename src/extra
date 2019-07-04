@@ -1,0 +1,65 @@
+extra code
+
+        <div>
+          <label>
+            Question {this.state.currentQuesIndex}:
+            <input
+              onChange={this.handleAddQuestion}
+              value={this.state.}
+            />
+          </label>
+        </div>
+
+         currentQuesIndex: this.state.currentQuesIndex + 1 }
+
+
+         
+handleAddQuestion = (evt) => {
+    var newArray = this.state.newCardQuestion.slice();
+    newArray.push(evt.target.value);
+    this.setState({ newCardQuestion: newArray });
+    console.log(this.state);
+  };
+
+  
+
+
+              const { type, newDeck } = action;
+  if (type === 'ADDDECK') {
+    return {
+      ...state,
+      decks: state.decks.concat(newDeck),
+    };
+  }
+
+  handleAddDeck = () => {
+    const newDeck = this.handleCreateDeck();
+    var newArray = this.state.cards.slice();
+    newArray.push(newDeck);
+    this.props.dispatch({ type: 'ADDDECK', newDeck: { id: 1234, title: 'Stuff', cards: yadda yadda } });
+  };
+
+  <Link to="/dashboard">
+     <button type="button">
+          Click Me!
+     </button>
+ </Link>
+
+ handleCreateCard = () => {
+    const newCard = [
+      {
+        question: this.state.newCardQuestion,
+        choices: this.state.newCardChoices,
+        answer: this.state.answer,
+      },
+    ];
+    console.log(newCard);
+    const newArr = this.state.cards.slice();
+    newArr.concat(newCard);
+    this.setState({ cards: newArr });
+    this.setState({ newCardChoices: [] });
+    this.setState({ newCardQuestion: [] });
+    console.log('added');
+    this.setState({ answer: 0 });
+    console.log(this.state.cards);
+  };
